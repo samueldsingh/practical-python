@@ -269,6 +269,25 @@ print('Total paid', round(total_paid, 2))
 print('Months', month)
 ```
 
+Output is:
+```
+1 2684.11 499399.22
+2 5368.22 498795.94
+3 8052.33 498190.15
+4 10736.44 497581.83
+5 13420.55 496970.98
+....................
+....................
+305 866653.55 11421.39
+306 869337.66 8784.87
+307 872021.77 6137.36
+308 874705.88 3478.83
+309 877389.99 809.21
+310 880074.1 -1871.53
+Total paid 880074.1
+Months 310
+```
+
 ### Exercise 1.11: Bonus
 
 While you’re at it, fix the program to correct for the overpayment that occurs in the last month.
