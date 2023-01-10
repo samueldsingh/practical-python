@@ -246,6 +246,26 @@ Try it:
 >>>
 ```
 
+### Solution
+```
+>>> with gzip.open(r"C:\Users\samue\Downloads\practical-python\Work\Data\portfolio.csv.gz", 'rt') as f:
+...     for line in f:
+...             print(line, end='')
+...
+```
+
+Output is:
+```
+name,shares,price
+"AA",100,32.20
+"IBM",50,91.10
+"CAT",150,83.44
+"MSFT",200,51.23
+"GE",95,40.37
+"MSFT",50,65.10
+"IBM",100,70.44
+```
+
 Note: Including the file mode of `'rt'` is critical here.  If you forget that,
 you'll get byte strings instead of normal text strings.
 
