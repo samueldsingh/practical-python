@@ -431,6 +431,31 @@ Your program should make a table that looks something like this:
 10 0.6047
 ```
 
+### Solution
+```
+>>> height = 100
+>>> bounce = 1
+>>> while bounce <= 10:
+...     height = height * (3/5)
+...     print(bounce, round(height, 4))
+...     bounce += 1
+...
+```
+
+Output is:
+```
+1 60.0
+2 36.0
+3 21.6
+4 12.96
+5 7.776
+6 4.6656
+7 2.7994
+8 1.6796
+9 1.0078
+10 0.6047
+```
+
 ### Exercise 1.6: Debugging
 
 The following code fragment contains code from the Sears tower problem.  It also has a bug in it.
