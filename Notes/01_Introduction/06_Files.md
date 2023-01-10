@@ -209,6 +209,24 @@ Your program should print output such as the following:
 Total cost 44671.15
 ```
 
+### Solution
+```
+>>> with open(r"C:\Users\samue\Downloads\practical-python\Work\Data\portfolio.csv", "rt") as f:
+...     headers = next(f)
+...     for line in f:
+...             row = line.split(',')
+...             nshares = int(row[1])
+...             price = float(row[2])
+...             total_cost += nshares * price
+...
+>>> print('Total cost', total_cost)
+```
+
+Output is:
+```
+Total cost 44671.15
+```
+
 ### Exercise 1.28: Other kinds of "files"
 
 What if you wanted to read a non-text file such as a gzip-compressed
